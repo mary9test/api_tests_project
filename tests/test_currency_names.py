@@ -6,7 +6,7 @@ from api.response import Response
 @allure.title("Проверка названия валюты")
 @allure.tag("api_tests")
 @allure.feature("currency_api")
-@allure.suite("test_find_metro_station")
+@allure.suite("test_currency_names")
 @pytest.mark.parametrize("currency, expected_name",
                          [("rub", "Российский рубль"), ("CHF", "Швейцарский франк"), ("eur", "Евро")])
 def test_get_currency_name(currency_api, currency, expected_name):
