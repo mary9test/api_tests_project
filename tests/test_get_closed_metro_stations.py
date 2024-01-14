@@ -6,7 +6,7 @@ from api.response import Response
 @allure.title("Получение данных о закрытых станциях метро: {metro_query}")
 @allure.tag("api_tests")
 @allure.feature("metro_api")
-@allure.suite("test_get_metro_station")
+@allure.suite("test_get_closed_stations")
 @pytest.mark.parametrize("metro_query", ["чернышевская", "ладожская"])
 def test_get_closed_stations(metro_query, metro_api):
     with allure.step("Получаем данные о станции метро"):
