@@ -1,6 +1,6 @@
 import pytest
-from api.metro_api import MetroAPI
-from api.currency_api import CurrencyAPI
+from dadata_api_tests_framework.api.metro_api import MetroApi
+from dadata_api_tests_framework.api.currency_api import CurrencyApi
 from dotenv import load_dotenv
 import os
 
@@ -12,7 +12,7 @@ def load_env():
 
 @pytest.fixture
 def metro_api():
-    base_url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/metro"
+    base_url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs"
     api_token = os.getenv('API_TOKEN')
     headers = {
         'accept': 'application/json',
@@ -20,22 +20,22 @@ def metro_api():
         'Authorization': f'Token {api_token}'
     }
 
-    return MetroAPI(base_url=base_url, headers=headers)
+    return MetroApi(base_url=base_url, headers=headers)
 
 
 @pytest.fixture
 def metro_api_unauthorized():
-    base_url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/metro"
+    base_url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs"
     headers = {
         'accept': 'application/json',
         'Content-Type': 'application/json'
     }
-    return MetroAPI(base_url=base_url, headers=headers)
+    return MetroApi(base_url=base_url, headers=headers)
 
 
 @pytest.fixture
 def currency_api():
-    base_url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/currency"
+    base_url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs"
     api_token = os.getenv('API_TOKEN')
     headers = {
         'accept': 'application/json',
@@ -43,15 +43,15 @@ def currency_api():
         'Authorization': f'Token {api_token}'
     }
 
-    return CurrencyAPI(base_url=base_url, headers=headers)
+    return CurrencyApi(base_url=base_url, headers=headers)
 
 
 @pytest.fixture
 def currency_api_unauthorized():
-    base_url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/currency"
+    base_url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs"
     headers = {
         'accept': 'application/json',
         'Content-Type': 'application/json'
     }
 
-    return CurrencyAPI(base_url=base_url, headers=headers)
+    return CurrencyApi(base_url=base_url, headers=headers)
