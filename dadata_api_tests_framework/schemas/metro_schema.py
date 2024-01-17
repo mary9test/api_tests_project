@@ -45,7 +45,7 @@ METRO_SCHEMA = {
                   "type": "string"
                 },
                 "is_closed": {
-                  "type": "null"
+                  "type": "boolean"
                 }
               },
               "required": [
@@ -57,8 +57,7 @@ METRO_SCHEMA = {
                 "line_name",
                 "geo_lat",
                 "geo_lon",
-                "color",
-                "is_closed"
+                "color"
               ]
             }
           },

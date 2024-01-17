@@ -15,4 +15,5 @@ def test_get_closed_stations(metro_query, metro_api):
 
     with allure.step("Проверяем, что станция метро закрыта"):
         assert response.response_json["suggestions"][0]["data"]["is_closed"] is True
+
         response.assert_status_code(200).validate(METRO_SCHEMA)
