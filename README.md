@@ -38,6 +38,11 @@
 ### Результаты запуска тестов
 ![img.png](dadata_api_tests_framework/pictures/testops-2.png)
 
+## Интеграция с Jira
+<a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1064">Ссылка на проект в Jira</a>
+
+![img.png](dadata_api_tests_framework/pictures/Jira.png)
+
 ## Отчет о запуске тестов в Telegram
 ### Диаграмма с информацией о запущенных тестах в Telegram
 ![img.png](dadata_api_tests_framework/pictures/telegram.png)
