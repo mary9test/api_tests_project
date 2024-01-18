@@ -17,3 +17,6 @@ class ApiResponse:
     def assert_status_code(self, expected_status_code):
         assert self.status_code == expected_status_code
         return self
+
+
+

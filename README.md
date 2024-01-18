@@ -1,6 +1,6 @@
 ﻿# Автоматизация тестирования API DaData
 > <a target="_blank" href="https://dadata.ru/">dadata.ru</a>
->![main page screenshot](dadata_api_tests_framework/pictures/dadata_api.png)
+>![main page screenshot](pictures/dadata_api.png)
 
 ## Особенности проекта
 * Интеграция с Allure TestOps
@@ -27,25 +27,25 @@
 4. Нажать Build
 
 ## Allure Report
-![img.png](dadata_api_tests_framework/pictures/allure-1.png)
+![img.png](pictures/allure-1.png)
 
 ### Графики
-![img.png](dadata_api_tests_framework/pictures/allure-2.png)
+![img.png](pictures/allure-2.png)
 
 ## Интеграция с Allure TestOps
 ### Дашборд с информацией о тестовом проекте
-![img.png](dadata_api_tests_framework/pictures/testops-1.png)
+![img.png](pictures/testops-1.png)
 ### Результаты запуска тестов
-![img.png](dadata_api_tests_framework/pictures/testops-2.png)
+![img.png](pictures/testops-2.png)
 
 ## Интеграция с Jira
 <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1064">Ссылка на проект в Jira</a>
 
-![img.png](dadata_api_tests_framework/pictures/Jira.png)
+![img.png](pictures/Jira.png)
 
 ## Отчет о запуске тестов в Telegram
 ### Диаграмма с информацией о запущенных тестах в Telegram
-![img.png](dadata_api_tests_framework/pictures/telegram.png)
+![img.png](pictures/telegram.png)
 
 
 

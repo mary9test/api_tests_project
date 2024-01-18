@@ -1,4 +1,4 @@
-from utils.attach import api_request
+from dadata_api_tests_framework.utils.attach import api_request
 
 
 class MetroApi:
