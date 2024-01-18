@@ -4,10 +4,10 @@ from dadata_api_tests_framework.schemas.currency_schema import CURRENCY_SCHEMA
 from dadata_api_tests_framework.api.response import ApiResponse
 
 
-@allure.title("Валидация ответа api currency")
+@allure.title("Названия стран для валют")
 @allure.tag("api_tests")
 @allure.feature("currency_api")
-@allure.suite("test_validate_metro_api")
+@allure.suite("test_verify_currency_country")
 @pytest.mark.parametrize("currency, expected_country", [("rub", "Россия"), ("ars", "Аргентина"), ("jpy", "Япония")])
 def test_verify_currency_country(currency_api, expected_country, currency):
     with allure.step("Отправляем запрос"):

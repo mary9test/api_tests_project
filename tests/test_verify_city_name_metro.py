@@ -3,10 +3,10 @@ from dadata_api_tests_framework.schemas.metro_schema import METRO_SCHEMA
 from dadata_api_tests_framework.api.response import ApiResponse
 
 
-@allure.title("Валидация ответа api metro")
+@allure.title("Название города в ответе metro_api")
 @allure.tag("api_tests")
 @allure.feature("metro_api")
-@allure.suite("test_validate_metro_api")
+@allure.suite("test_verify_city_name")
 def test_verify_city_name(metro_api):
     with allure.step("Отправляем валидный запрсо"):
         response = ApiResponse(metro_api.find_metro_station(query='Москва'))
